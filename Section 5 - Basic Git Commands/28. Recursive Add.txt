@@ -1,0 +1,48 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Create directory that have sub directories.
+	mkdir -p level1/level2/level3/level5
+	
+3. Go inside level1 folder and create new text file.
+	cd level1
+	npp level1-file.txt
+	
+4. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy some paragraphs and paste into the text file. Then save and exit.
+
+5. Next, go inside level1 folder and create new text file.
+	cd level2
+	npp level2-file.txt
+	
+6. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy some paragraphs and paste into the text file. Then save and exit.
+
+7. Next, go inside level1 folder and create new text file.
+	cd level3
+	npp level3-file.txt
+	
+8. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy some paragraphs and paste into the text file. Then save and exit.
+
+9. Next, go inside level1 folder and create new text file.
+	cd level5
+	npp level5-file.txt
+	
+10. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy some paragraphs and paste into the text file. Then save and exit.
+
+11. Now go back to starter-web repo
+	cd ../../../..
+	
+12. Check the status of git
+	git status
+
+13. git status do not show every sub directories that need to be added. It only show level1 directory.
+
+14. Add changes to git
+	git add .
+	
+15. Check the status of git
+	git status
+	
+16. You can see all sub directories shows that need to be commited.
+
+17. Commit the changes.
+	git commit

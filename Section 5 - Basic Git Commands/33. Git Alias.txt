@@ -1,0 +1,17 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. View decorated commmit history
+	git log --all --oneline --graph --decorate
+	
+3. Above code is too long. If we want we can manual git command to dop that.
+	
+4. Create your own git command. If you type "git hist" it will show "There is no command hist in git". To make that happen we can use Alias
+		git hist (not working)
+		git config --global alias.hist "log --all --oneline --graph --decorate"
+		git hist (now it is working)
+		
+5. To view our custome alias, open .gitconfig file
+	npp ~/.gitconfig
+	
+6. You can see our hist command in there under ther alias category. If you want, you can edit things in alias there.

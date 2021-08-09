@@ -1,0 +1,30 @@
+1. Open git bash and navigate to starte-web repo.
+	cd projects/
+	cd starter-web/
+	
+2. Create new text file called "hipster".
+	npp hipster.txt
+	
+3. New notepad++ file will open.
+
+4. Now navigate to https://hipsum.co/. Then click "Beer me!" button. Copy the first paragraph and paste it on our text file. Save and close.
+
+5. Now check the status of the repo
+	git status
+	
+6. You can see hipster.txt is in red color because we did not add changes to repo.
+
+7. Add the text file.
+	git add hipster.txt
+
+8. Commit changes
+	git commit
+	
+9. If you only use "git commit" command, notepad++ file open and you can add commit message or message starting from line 1. Then save and close it.
+	line 1 -: My first commit!
+	
+10. Update our remote repository by applying changes. (this method most suitable when we use branches)
+	git pull origin master (git pull origin <branch name>)
+	
+11. Push the changes
+	git push origin master (git push origin master)

@@ -1,0 +1,14 @@
+1. Go to projects/starter-web and open hipster.txt to apply some changes.
+	cd projects/
+	cd starter-web/
+	npp hipster.txt
+	
+2. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy the second paragraph and paste into the text file. Then save and exit.
+
+3. Now add and commit the changes using one command. This method can only apply for tracked files by git.
+	git commit -am "Adding more hipsum text"
+	
+4. To check our file is tracked by git, type
+	git ls-files
+	
+5. You can see hipster.txt is tracked by git. If you want to add new file you always need to use "git add" command and then "git commit".

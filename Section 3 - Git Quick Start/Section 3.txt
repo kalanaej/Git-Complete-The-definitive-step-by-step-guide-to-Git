@@ -1,0 +1,56 @@
+1. Go to Github.com
+2. Create repository called "github-demo" and add a description.
+3. Check "Add a README file"
+4. Create the repository.
+5. Open git bash
+
+6. View working directory
+	pwd
+	
+7. Create a new directory called "projects"
+	 mkdir projects
+
+8. Go inside "projects" folder
+	cd projects
+	
+9. Setup your user account in git
+	git config --global user.name "<your name>"
+	git config --global user.email "<your email>"
+	
+10. Retrive user information
+	git config --global --list
+	
+	output -: user.name=<your name>
+			  user.email=<your email>
+			  
+11. Get Https link of your "github-demo" project from Github.
+
+12. Clone the project
+	git clone <https link>
+	
+13. Navigate to github-demo
+	cd github-demo/
+	
+14. Create new text file that contain some text.
+	echo "Test Git Quick Start demo" >> start.txt
+	
+15. View contents in text file (start.txt)
+	cat start.txt
+	
+	output -: Test Git Quick Start demo
+	
+16. Now check the status of the repository
+	git status
+		-status is red because we did not add changes to git
+	
+17. Add the changes to git
+	git add start.txt
+	
+18. Check the status again
+	- satus is green because we added the changes to git.
+	
+19. Commit changes
+	git commit -m "Adding start text file"
+	
+20. Push the commit to the master branch
+	git push origin main

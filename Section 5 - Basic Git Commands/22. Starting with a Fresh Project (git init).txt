@@ -1,0 +1,42 @@
+1. Open git bash and navigate to projects folder that we previously created
+	cd projects
+	
+2. Now, create new repository using bash
+	git init fresh-project
+	
+3. Navigate into that project
+	cd fresh-project
+
+4. To view every type of files, type
+	ls -al
+	
+5. now, navigate to https://hipsum.co/ and select paragraph count 5 and type should be Hipster neat. Uncheck all remaining boxes. Finally, click "Beer me!" button.
+6. You can see some paragraphs genarated. Copy the first paragraph
+
+7. Create new text file in our repository
+	npp hipster.txt
+	
+8. New notpad++ file will open and paste the contents that you copied from hipster.co site. Then close notepad++.
+
+9. Track the changes
+	git status
+	
+10. You can see hipster.txt visible as red because it is not added yet. Therefore
+	git add hipster.txt
+	
+11. Now try to commit the changes without giving any definition
+	git commit
+	
+12. Instead of commiting you can see a notepad++ file opened. In the first line you can type your commit message. You can add multiple commit messages in multiple lines in here.
+	line 1 - Adding new file with hipster ipsum
+	line 2 - This was done with Notepad++
+
+13. Now save the file and close it. You can see commit applied in bash.
+
+14. To delete our repository go back to projects folder again.
+	cd ..
+	
+15. Delete the repository
+	 rm -rf fresh-project/
+
+16. You can see our repo is deleted when check using "ls" command.

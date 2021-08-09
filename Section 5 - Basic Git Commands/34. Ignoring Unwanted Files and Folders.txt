@@ -1,0 +1,52 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. If you want to ignore unwanted files or folders you need to have .gitignore file. If you don't have it, create it
+	npp .gitignore
+	
+3. This file can contain three optons
+	i) Specific file -: myfile.txt
+	ii) File patter -: *.exe
+	iii) Folder -: my-folder/
+	
+	line 1 -: .DS_Store
+	
+4. after adding a directory, save and close the .gitignore
+
+5. Add changes to staging
+	git add .gitignore
+	
+6. Commit the changes
+	git commit
+	
+	line 1 -: Adding git ignore file to exclude unwanted files
+
+7. Create new log file
+	npp access.log
+	
+8. Add few lines in there. Then save and close it
+	line 1 -: /index.html 200
+	line 2 -: /somethingelse.html 404
+	line 3 -: /hackattempt.html 500
+	
+9. To exclude access.log file go to .gitignore again
+	npp .gitignore
+	
+	line 2 -: *.log (this will exclude all log files)
+	
+10. Create new log directory
+	mkdir log
+	
+11. Move access.log inside log directory
+	mv access.log log
+	
+12. Get a copy from access.log and rename it.
+	cp access.log access.2014-11-04
+	
+13. We need to add log directory into .gitignore because we only excluded log files not directories.
+	cd ..
+	npp .gitignore
+	
+14. We need to exclude access.log file only and it is now store in log directory. Therefore *.log in .gitignore is unnessasary.
+	line 2 -: remove " *.log "
+	line 2 -: add " log/ "

@@ -1,0 +1,12 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. You can see every commit we have done so far not added to our Github remote repo because we did not pull and push the commits.
+
+3. First pull the commits
+	git pull origin master
+	
+4. Now push the updates
+	git push origin master
+	
+5. Now go to Github remote repo. You can see all commits are there.

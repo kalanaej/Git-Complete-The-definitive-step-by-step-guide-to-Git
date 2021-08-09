@@ -1,0 +1,20 @@
+1. Go to our repo and open hipster.txt
+	cd projects/starter-web/
+	npp hipster.txt
+	
+2. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy the third paragraph and paste into the text file. Then save and exit.
+
+3. Add the changes
+	git add hipster.txt
+
+4. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy the forth paragraph and paste into the text file. Then save and exit.
+	npp hipster.txt
+	
+5. Check the status of the repo.
+	git status
+	
+6. You can see your first edit been added and second edit should be added. To send that both to staging area you can use
+	git add hipster.txt
+	
+7. Commit the changes	
+	git commit -m "More ipsum for hipsters"

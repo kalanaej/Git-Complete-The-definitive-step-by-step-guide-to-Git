@@ -1,0 +1,31 @@
+1. Navigate to http://www.initializr.com/. Select Bootstrap and check all boxes under "H5BP Optional" topic. Then download it.
+
+2. Now open git bash. Go inside projects folder.
+	cd projects
+	
+3. Unzip the download zip file. Make sure downloaded zip in downloads directory. You can see all files will extracted.
+	unzip ~/Downloads/initializr-verekia-4.0.zip
+	
+4. Use "ls" command to view all directories. Our expected directory exist as "initializr/". Then rename that directory into "web direct"
+	mv initializr web-project (mv <current name of the directory> <new name of the directory>)
+	
+5. The go inside renamed directory
+	cd web-project/
+	
+6. Make the project as git repository
+	git init
+	
+7. Now check the status of the repo. you can see all directories and files mark as red. because we did not add to the repo yet.
+
+8. To add all files and directories into our repo, type
+	git add .
+	
+9. To check if it is worked, check the status again. You can see all files and directories are green.
+	git status
+	
+10. Commit the changes
+	git commit -m "My first commit, inline"
+	
+11. Now remove our repository. First go back to projects directory. Then
+	cd ..
+	rm -rf web-project

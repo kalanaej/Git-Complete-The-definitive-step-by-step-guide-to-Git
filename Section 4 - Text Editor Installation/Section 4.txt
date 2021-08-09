@@ -1,0 +1,26 @@
+1. We are doing how to Configure Notepad++ with Git.
+2. First, copy the installed location of Notepad++. (In my case C:\Program Files (x86)\Notepad++)
+3. Open "This PC" and go to properties > Advanced system settings > Environment Variables > System Variables > Select Path variable > click Edit.
+4. Click New > paste the link > OK
+5. Open git bash again and type "notepad++". You can see notepad++ is opened.
+
+6. To create bash profile type
+	notepad++ .bash_profile
+	
+7. You can see new file created name as ".bash_profile". Add below details into that file.
+	alias npp='notepad++.exe -multiInst -nosession'
+	
+8. Now exit from git bash and notepad++ and then again open git bash and type "npp" to open notepad++ this time. You can see it works.
+
+9. To setup notepad++ is the default editor within git, type 
+	git config --global core.editor "notepad++.exe -multiInst -nosession"
+
+10. To check if configuration worked, type 
+	git config --global --list
+	
+	output -: user.name=<name>
+			  user.email=<email>
+			  core.editor=notepad++.exe -multiInst -nosession
+
+11. To edit the configurations you can type
+	git config --global -e

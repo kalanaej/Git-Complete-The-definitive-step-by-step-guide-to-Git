@@ -1,0 +1,79 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Then go inside level3 directory
+	cd level1/level2/level3/
+	
+3. Now rename the level3-file.txt using git command
+	git mv level3-file.txt level3.txt (git mv <current file name> <new file name>)
+	
+4. Check the status
+	git status
+	
+5. You can see changes are in green color. When we renaming file, it automatically add to the git. Therefore, no need to use "git add" command.
+
+6. Therefore, commit the changes
+	git commit -m "renaming level3 file"
+	
+7. Go back to level2 directory
+	cd ..
+	
+8. Rename level2-file.txt using operating system level. (without using git)
+	mv level2-file.txt level2.txt (mv <current file name> <new file name>)
+	
+9. Check the status
+	git status
+	
+10. Now git recognize this as you deleted the level2-file.txt file and add new file called level2.txt (therefore, changes are show in red)
+
+11. To show we rename the file without any deletion, we need to add this into git as
+	git add -A
+	
+12. Commit the changes
+	git commit
+	
+	line 1 -: Renaming level2 file
+	
+13. After you renaming a file using git command and you want to undo that renaming follow this
+	rename -: git mv level2.txt 2.txt
+	undo -: git mv 2.txt level2.txt
+	
+14. Move level2.txt into level3 directory.
+	git mv level2.txt level3/ (git mv <your file> <move location>)
+	
+15. Go back to level2 directory and commit the changes
+	cd ..
+	git commit
+	
+	line 1 -: Moving file from level2 to level3
+
+16. Move level2.txt from level3 to level2 directory using OS commands.
+	cd level3/
+	mv level2.txt ..
+
+17. If we check the git status, it will show we delete the text file and create a new file. To prevent that type
+	git add -A
+	
+18. Commit the changes
+	git commit
+	
+	line 1 -: Moving level2 file back to level2 directory
+	
+19. Go back to level1 directory and rename the file manually (C:\Users\user\projects\starter-web\level1\level1-file.txt)  (Right click > rename)
+
+20. Check the status
+	git status
+	
+21. In here also, git detected the process as deletion and add new file. To prevent that we cannot use "git add -A". Therefore, to do that, type
+	git add level1.txt (git add <new name>)
+	git add -u
+	
+20. Check the status
+	git status
+	
+21. Now it shows as you renamed the file, not deleted.
+
+22. Commit the changes
+	git commit
+	
+	line 1 -: Renaming level1 file	

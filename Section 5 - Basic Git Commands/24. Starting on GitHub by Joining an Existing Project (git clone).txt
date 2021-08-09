@@ -1,0 +1,15 @@
+1. Navigate to https://github.com/scm-ninja/starter-web. Click "fork" and the repo will add to your personal account. 
+
+2. To clone the forked repo, click on "code" drop down and copy the https url.
+
+3. Open git bash and go to projects directory
+	cd projects
+
+4. Now clone the project inside projects directory.
+	git clone https://github.com/kalanaej/starter-web.git
+	
+5. Run "ls" command to view repo name and then go inside to that repo
+	cd starter-web
+	
+6. Check the status of the repo
+	git status

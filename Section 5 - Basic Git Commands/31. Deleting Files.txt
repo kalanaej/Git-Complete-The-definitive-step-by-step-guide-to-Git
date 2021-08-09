@@ -1,0 +1,49 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Create a text file callled "doomed"
+	npp doomed.txt
+	
+	line 1 -: This file won't last long
+	
+3. If we want to delete that file, git commands not work for deletion because we did not add that file to git yet. (check git status)
+
+4. However, we can user OS commands to delete that file.
+	rm doomed.txt
+	
+5. I you already added a file to the git, you can simply delete it by using
+	git rm newfile.txt
+	
+6. After that commit the changes
+	git commit -m "Deleting new file"
+	
+7. Now delete the hipster.txt
+	git rm hipster.txt
+	
+8. It is now in stage area for complete deletion but if you want to undo the deletion, type
+	git reset HEAD hipster.txt
+	
+9. Now, check the directory using "ls" command. You can see deleted file still not appear in project directory.
+
+10. Check the status. You can see our file changes removed from staging area but it colored as red. We need to still restore that file. To do that type
+	git checkout -- hipster.txt
+	
+11. Delete the hipster.txt file using OS commands
+	rm hipster.txt
+	
+12. If we check status, it shows we delete the file and not added to staging. We can add that file into staging area by using
+	git add -A
+	
+13. Commit the changes
+	git commit
+	
+	line 1 -: Deleted hipster.txt file
+	
+14. Remove level1 directory that have sub directories and files using OS commands
+	rm -rf level1
+	
+15. Add the changes to staging
+	git add -A
+	
+16. Commit the changes
+	git commit -m "deleting level1 and all the children"

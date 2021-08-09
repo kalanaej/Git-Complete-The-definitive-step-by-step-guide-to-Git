@@ -1,0 +1,48 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. View help log in git
+	git help log
+	
+3. View your commit history
+	git log
+	
+4. After the commit keyword, there are bunch of strings. These are SHA-1 identifier. All identifiers unique ones.
+
+5. Quit from the log
+	q
+	
+6. If you want to reduce the length of SHA-1 identifier, type
+	git log --abbrev-commit
+
+7. Quit from the log
+	q
+	
+8. Get commit history line by line(--oneline), table view(--graph) and colored(--decorate).
+	git log --oneline --graph --decorate
+					or
+	git log --all --oneline --graph --decorate
+	
+9. You can get the log history of selected range of commits
+	git log 25ab1af...3580a3a
+	
+7. Quit from the log
+	q
+	
+8. Also, we can get commits that happen within specific time period.
+	git log --since="3 days ago"
+	
+9. I fyou want to check the logs of targeting specific file, type
+	git log -- hipster.txt
+	
+10. Quit from the log
+	q
+	
+11. Check the logs of renames targrting on specific file
+	git log --follow -- level1/level2/level2.txt
+	
+12. Quit from the log
+	q
+	
+13. View the log of specific commit
+	git show 1e09221d756d5977dd186c894366e0d8a517aefb (git show <initializer>)

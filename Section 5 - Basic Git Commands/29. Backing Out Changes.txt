@@ -1,0 +1,17 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Go inside level1 folder and and open level1-file.txt
+	cd level1
+	npp level1-file.txt
+	
+3. Navigate to https://hipsum.co/. Then click "beer me!" button. Then copy some paragraphs and paste into the text file. Then save and exit.
+
+4. Add the changes to git
+	git add level1-file.txt
+	
+5. If you want to undo added changes, type
+	git reset HEAD level1-file.txt
+	
+6. But edits done to the text file still remaining. To remove that edits, type
+	git checkout -- level1-file.txt (git checkout -- <file name>)
