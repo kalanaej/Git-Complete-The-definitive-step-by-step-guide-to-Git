@@ -1,0 +1,29 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. To only view local branches
+	git branch
+	
+3. You can create and switch to new branch immediatly by using
+	git checkout -b title-change
+	
+4. Edit simple.html file in title-change branch
+	npp simple.html
+	
+5. Add and commit in the same time 
+	git commit -am "Changing title of Html file"
+	
+6. Before pass changes from title-change to master branch, we have to switch our branch into master
+	git checkout master
+	
+7. You can compare the changes between two branches before continue further.
+	git diff master title-change
+	
+8. If you want to see that changes visualy.
+	git difftool master title-change
+	
+9. Now we can merge changes from title-change to master
+	git merge title-change
+	
+10. Now we can delete the title-change branch
+	git branch -d title-change

@@ -1,0 +1,4 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. pull the commits to remote repo
