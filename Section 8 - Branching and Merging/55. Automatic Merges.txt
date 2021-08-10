@@ -1,0 +1,26 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. You can create and switch to new branch immediatly by using
+	git checkout -b simple-changes
+	
+3. Edit humans.txt file in add-copyright branch
+	npp humans.txt
+	
+4. Add and commit in the same time 
+	git commit -am "Adding team member to humans.txt"
+	
+5. To pass those changes to master branch, first, switch to master
+	git checkout master
+	
+6. Now edit the read me file in master
+	npp README.md
+	
+7. Add and commit in the same time 
+	git commit -am "Adding instruction on how to contribute"
+	
+8. Merge simple-changes branch changes into master branch with commit. This will commit changes of both master and simple-changes branches at once.
+	git merge simple-changes -m "Merging changes from simple-changes branch"
+	
+9. Now we can delete the simple-changes branch
+	git branch -d simple-changes

@@ -1,0 +1,52 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. If you change the same content in same file in master branch and any other branch, it will giving you merge conflicts when you are trying to merge both.
+
+3. You can create and switch to new branch immediatly by using
+	git checkout -b realwork
+	
+4. Edit simple.html file in add-copyright branch
+	npp simple.html
+	
+5. Add and commit in the same time 
+	git commit -am "Making changes to simple.html"
+	
+6. To pass those changes to master branch, first, switch to master
+	git checkout master
+	
+7. Edit the simple.html in master branch
+	npp simple.html
+	
+8. Add the changes
+	git add simple.html
+	
+9. Commmit changes
+	git commit
+	
+10. Now you cannot merge realwork branch with master branch because contents of both files are changed.
+	git merge realwork
+	
+11. You can see you are in merging state. not in the master branch. (marster|MERGING)
+
+12. Therefore, try to edit the simple.html in master merging area
+	npp simple.html
+	
+13. You can see conflicts are show in the file. To resolve this use P4Merge tool.
+	git mergetool
+	
+14. In the P4Merge tool you can click the color shape that you want to keep in future.
+
+15. After resolving conflicts, commit the changes.
+	git commit -m "Done resolving merge conflicts"
+	
+16. If you check the status you can see simple.html file shown as simple.html.orig file. It happens if we want to restore changes we can get that from that .orig file.
+
+17. We can ignore that file extention using .gitignore
+	npp .gitignore
+	
+	add -: *.orig
+	
+18. Add the changes of .gitignore and commit the changes.
+	git add .gitignore
+	git commit -m "Updating ignore file to exclude merge temp files"

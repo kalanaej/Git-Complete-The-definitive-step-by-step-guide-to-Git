@@ -1,0 +1,26 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Check the list of existing branches in local and remote
+	git branch -a
+	
+3. Create new branch
+	git branch mynewbranch (git branch <branch name>)
+	
+4. Again Check the list of existing branches. You can see our newly created branch in there. Green color branch is the current branch that we are working now
+
+5. To move from master to mynewbranch, type
+	git checkout mynewbranch
+	
+6. Now you can see mynewbranch is in green color because we are using it now.
+
+7. Go back to master branch again.
+	git checkout master
+	
+8. To rename your branch, type
+	git branch -m mynewbranch newbranch (git branch -m <current branch name> <new name>)
+	
+9. If you want to delete a branch, type
+	git branch -d newbranch (git branch -d <branch name>)
+	
+10. Remember cannot delete a branch that you are currently working on. You need to switch to different branch first.

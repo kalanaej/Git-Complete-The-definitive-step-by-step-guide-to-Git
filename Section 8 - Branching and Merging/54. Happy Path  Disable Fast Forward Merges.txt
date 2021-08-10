@@ -1,0 +1,23 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. You can create and switch to new branch immediatly by using
+	git checkout -b add-copyright
+	
+3. Edit simple.html file in add-copyright branch
+	npp simple.html
+	
+4. Add and commit in the same time 
+	git commit -am "Adding copyright notice"
+	
+5. Edit read me file also.
+	npp README.md
+	
+6. Add and commit in the same time 
+	git commit -am "Adding copyright notice to Readme"
+	
+7. To pass those changes to master branch, first, switch to master
+	git checkout master
+	
+8. Mearge the chabges to master without fast forwarding
+	git merge add-copyright --no-ff
