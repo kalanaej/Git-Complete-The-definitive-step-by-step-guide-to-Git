@@ -1,0 +1,111 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Create the README.md file
+	npp README.md
+	
+	first level heading  -: #
+	second level heading -: ##
+	
+3. After editing read me file, add the changes to staging
+	git add README.md
+	
+4. Commit the changes
+	git commit -m "Adding README file"
+	
+5. Push the changes
+	git push origin master
+	
+6. Apply further edits to README.md
+	npp README.md
+	
+7. Now add and commit at once
+	git commit -am "Adding new section: Deployment"
+	
+8. Push the updates
+	git push
+	
+9. Edit the README.md file further more
+	npp README.md
+	
+10. Now add and commit at once
+	git commit -am "Adding description"
+	
+11. Edit the README.md file further more
+	npp README.md
+	
+12. Now add and commit at once
+	git commit -am "Adding introduction text"
+	
+13. Edit the README.md file further more
+	npp README.md
+	
+14. Add the changes to stage are
+	git add README.md
+	
+15. Edit the README.md file further more
+	npp README.md
+
+		################ Staging - Loacl ################
+16. To compare what is on staging and what is my local machine, we can use
+	git diff
+	
+17. You can compare them in GUI by typing
+	git difftool
+
+		################## Git - Loacl ##################
+18. To compare what is on Git and what is my local machine, we can use
+	git diff HEAD
+	
+19. You can compare them in GUI by typing
+	git difftool HEAD
+	
+		################# Git - Staging #################
+18. To compare what is on Git and what is on Staging, we can use
+	git diff --staged HEAD
+	
+19. You can compare them in GUI by typing
+	git difftool --staged HEAD
+	
+20. Some time diff can be use for multiple file. In that case, if we want to select one file, git has some options
+
+21. Edit simple.html file in our project.
+	npp simple.html
+
+22. If we use "git diff", git shows both read me file and sample html file at once.
+
+23. If you want to compare difference only read me file, type
+	git diff -- README.md
+	
+24. That trick also work with difftool.
+	git difftool -- README.md
+	
+25. View the commit history
+	git log --oneline
+	
+26. Using commit IDs compare last commit with any other old commit.
+	git diff e73f914 HEAD f4b91b0 (git diff <any old commit> HEAD <last commit id>)
+	
+27. Compare Head commit and one commit before HEAD
+	git diff HEAD HEAD^
+	
+28. You can compare them in GUI by typing
+	git difftool HEAD HEAD^
+	
+29. Comparing master branch in loacl and master brach in remote repository.
+	git diff master origin/master (git diff <local master> origin/<remote master>)
+	
+30. You can compare them in GUI by typing
+	git difftool master origin/master
+	
+31. Before we finish add the changes we have done before to staging area
+	git add .
+	
+32. Commit the changes
+	git commit -m "Updating repo with changes from compare section"
+	
+33. Pull
+	git pull
+	
+34. Push
+	git push origin master
