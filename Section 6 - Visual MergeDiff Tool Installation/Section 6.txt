@@ -1,0 +1,36 @@
+1. In here, we are going to download P4Merge to work with git for comparing and merge conflict resolution.
+
+2. Navigate to https://www.perforce.com/.
+
+3. Click on download tab and find "Helix Visual Merge Tool (P4Merge)" and click on it.
+
+4. In P4Merge page select
+	* Familly - Windows
+	* Platform - Windows(x64)
+	* Version - EXE
+	
+	Then download it.
+	
+5. When installation, select only P4Merge option. Others option should be unchecked.
+
+6. Now, we have to made P4Merge accessable from any command prompt. If you are using latest version you do not have to do this. It is auto configured.
+
+7. After that, we have to configure P4Merge with Git. You need to add that tool in global configuration.
+	git config --global merge.tool p4merge
+	
+8. Now giving the path of P4Merge to global
+	git config --global mergetool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+	
+9. Setup the git not to prompt whether or not to launch p4merge, everytime we need to resolve a conflict.
+	git config --global mergetool.prompt false
+	
+10. Next, setup diff tool configuration with git
+	git config --global diff.tool p4merge
+	
+11. Next, setup diff tool path with git
+	git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+	
+12. Finally, setup this to resolve conflicts
+	git config --global difftool.prompt false
+	
+13. You can view the list, that we setup earlier.
