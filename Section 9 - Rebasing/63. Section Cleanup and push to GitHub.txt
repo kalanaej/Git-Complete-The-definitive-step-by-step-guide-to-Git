@@ -1,0 +1,11 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Now we can delete the bigtrouble branch
+	git branch -d bigtrouble
+	
+3. Now pull all commits
+	git pull origin master
+	
+4. Push
+	git push origin master

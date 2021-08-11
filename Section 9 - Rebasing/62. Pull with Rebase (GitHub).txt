@@ -1,0 +1,21 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. push the changes that we previously done so far
+	git push origin master
+	
+3. Edit simple.html
+	npp simple.html
+	
+4. Commit the changes
+	git commit -am "local: updating simple.html"
+	
+5. Go to your Github account and edit index.html file in your starter-web project. Now you have two different versions in remote and local and remote is one -step a head from local.
+
+6. To get remote updates to local, use fetch feature in git. Fetch is acting like commit in here.
+	git fetch origin master
+	
+7. To apply changes we need to follow this. Now you can view remote updates can view from local repo
+	git pull --rebase origin master
+	
+

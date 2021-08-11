@@ -1,0 +1,41 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Edit simple.html file
+	npp simple.html
+	
+3. Add and commit in the same time 
+	git commit -am "mb before rebase conflicts"
+	
+4. Create and switch to new branch immediatly by using
+	git checkout -b bigtrouble
+	
+5. Do conflicting changes in bigtrouble branch
+	npp simple.html
+	
+6. Add and commit in the same time 
+	git commit -am "fb adding some troubles to feature branch"
+	
+7. Switch to master
+	git checkout master
+	
+8. Edit the same file
+	npp simple.html
+	
+9. Add and commit in the same time 
+	git commit -am "mb conflicting changes brewing"
+	
+10. Now switch back to bigtrouble branch
+	git checkout bigtrouble
+	
+11. To view changes visually,
+	git difftool master bigtrouble
+	
+12. You can see our master branch and bigtrouble branch content is has big difference now. In this cases, rebasing giving lot of conflicts.
+	git rebase master (This gave rebase conflicts)
+	
+13. You can abort the rebase in this cases
+	git rebase --abort
+	
+14. To resolve those conflicts you can use mergetool and select which parts nessasary for the future works.
+	git mergetool

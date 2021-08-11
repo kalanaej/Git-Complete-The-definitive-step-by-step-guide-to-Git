@@ -1,0 +1,37 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. In Rebasing we basicaly do is go to a feature branch and chnages some contents and then switch to master branch and do some changes in there also. After that, apply master branch changes into our feature branch.
+
+3. Create and switch to new branch immediatly by using
+	git checkout -b myfeature
+	
+4. Edit humans.txt file
+	npp humans.txt
+	
+5. Add and commit in the same time 
+	git commit -am "Saying thanks"
+	
+6. To pass those changes to master branch, first, switch to master
+	git checkout master
+	
+7. Now edit the README.md file in master branch
+	npp README.md
+	
+5. Add and commit in the same time 
+	git commit -am "Adding new line to README for rebase example"
+	
+6. You may face lot of conflict when merge feature branch with master because master is edited after feature branch creation. Rebasing is the best solution for resolving these types of problems.
+
+7. So, switch back to myfeature branch
+	git checkout myfeature
+	
+8. Rebase master branch changes into myfeature branch.
+	git rebase master (git rebase <main branch name>)
+	
+9. Now we can merge myfeature branch into master branch
+	git checkout master
+	git merge myfeature
+	
+10. Now we can delete the myfeature branch
+	git branch -d myfeature
