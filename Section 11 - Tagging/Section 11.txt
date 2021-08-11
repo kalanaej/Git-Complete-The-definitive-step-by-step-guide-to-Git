@@ -1,0 +1,106 @@
+# Phase 1	
+	1. Go to our repo
+		cd projects/starter-web/
+		
+	2. If you want to highlight commit that special to you or your project, you can use tag feature in git. To create a tag, type
+		git tag myTag (git tag <name of your tag>
+		
+	3. You can view your all tag list by typing
+		git tag --list
+		
+	4. To view selected tag details, just type
+		git show myTag (git show <your tag name>)
+		
+	5. If you want to delete a selected tag, type
+		git tag --delete myTag (git tag --delete <your tag name>)
+	
+
+# Phase 2
+	1. To create annotate tag you can type
+		git tag -a v-1.0 (git tag -a <tag name>)
+		
+		line 1 -: Release 1.0
+		
+	2. Annotate tag allows you to create custome messages via text file to apply selected commit.
+	
+	3. Get the list of tags
+		git tag --list
+		
+	4. To view selected tag details, just type
+		git show v-1.0
+		
+
+# Phase 3
+	1. Edit the index.html file
+		npp index.html
+		
+	2. commit the changes
+		git commit -a
+		
+		line 1 -: Tweaking file for tagging example 
+		
+	3. Add annotate tag
+		git tag -a v-1.1
+		
+		line 1 -: Release 1.1
+		
+	4. Edit the simple.html file
+		npp simple.html
+		
+	5. Commit the changes
+		git commit -am "Updating for tag 1.1"
+		
+	6. Before changing another file, we can setup future commit. We can use --amend in git
+		git commit --amend
+		
+		line 1 -: Updating for tag 1.2
+		
+	7. Setup tag for future commit
+		git tag v-1.2 -m "Release 1.2" (git tag <tag name> -m "<tag message"")
+		
+	8. You can view difference between v-1.0 vs v-1.2
+		git diff v-1.0 v-1.2
+				or
+		git difftool v-1.0 v-1.2
+		
+
+# Phase 4
+	1. If you want to add annotate tag to specific commit message, type
+		git tag -a v-0.9-beta 8376f03 (git tag -a <tag name> <commit id>)
+		
+		line 1 -: Beta Release 0.9
+		
+	2. Create anothe tag for another commit
+		 git tag -a v-0.8-alpha 9fb3483
+		 
+		 line 1 -: Alpha Release 0.8
+		 
+
+# Phase 5
+	1. If you think you have done taging for wrong commit you can change it by using,
+		- Deleting the tag and assign it again to correct commit
+		- Forcely change the tag from wrong commit to right commit
+		
+	2. We try force method
+		git tag -a v-0.8-alpha -f 97e49de (git tag -a <tag name> -f <right commit id>)
+		
+		line 1 -: Alpha Release 0.8 (corrected)
+		
+		
+# Phase 5
+	1. You can view git tag list
+		git tag --list
+		
+	2. If you go to you Github repo you cannot see any tag. Therefore, try out to push one tag from our local repo
+		git push origin v-0.9-beta (git push origin <tag name>)
+		
+	3. You can see our tag in Github. Our commit message that belongs to the tag also commited to Github.
+	
+	4. Push another tag
+		git push origin v-1.1
+		
+	5. To push all tags into Github, type
+		git push origin master --tags
+		
+	6. if you want to delete selected tag on github, you can use
+		git push origin :v-0.8-alpha (git push origin :<tag name>)
