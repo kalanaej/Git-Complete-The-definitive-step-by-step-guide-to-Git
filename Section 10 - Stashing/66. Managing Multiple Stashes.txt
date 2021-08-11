@@ -1,0 +1,33 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Edit simple.html file
+	npp simple.html
+	
+3. Stash that change with a message
+	git stash save "simple changes"
+	
+4. Edit index.html file
+	npp index.html
+	
+5. Stash that change with a message
+	git stash save "index changes"
+	
+6. Edit README.md file
+	npp README.md
+	
+7. Stash that change with a message
+	git stash save "Readme changes"
+	
+8. Now view the stash list. You can see multiple stashes their with messages that we set before.
+	git stash list
+	
+9. You can see first stash message is the last stash that we have setuped.
+
+10. If you want to view specific stash from list, type
+	git stash show stash@{1}
+	
+11. Now, release selected stash from the list
+	git stash apply stash@{1}
+	
+12. We do not want stash@{1} now because we released it. Therefore, we can drop it.

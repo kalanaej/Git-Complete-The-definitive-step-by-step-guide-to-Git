@@ -1,0 +1,38 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Edit simple.html file
+	npp simple.html
+	
+3. Edit humans.txt file
+	npp humans.txt
+	
+4. Now, add index.html file to staging area.
+	git add index.html
+	
+5. Create new md file
+	npp new.md
+	
+6. Add all changes to stash.
+	git stash -u
+	
+7. Apply that stash into new branch. We can create, switch and stash into new branch at the same time and delete the stash from the list.
+	git stash branch newchanges
+	
+8. Delete the md file using OS commands
+	rm new.md
+	
+9. Add other changes to git
+	git add .
+	
+10. Commit the changes
+	git commit
+	
+	line 1 -: Changes after git-stash-branch command
+	
+11. Merge the changes into master
+	git checkout master
+	git merge newchanges
+	
+12. Now, we can delete newchanges branch
+	git branch -d newchanges
