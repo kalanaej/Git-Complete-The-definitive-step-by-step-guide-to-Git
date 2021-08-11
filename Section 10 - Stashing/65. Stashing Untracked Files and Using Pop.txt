@@ -1,0 +1,30 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Edit humans.txt file
+	npp humans.txt
+	
+3. Create new text file.
+	npp ANewFile.txt
+	
+4. If we use stash now, stash activate only for modified file (humans.txt). New file not added to stash. 
+	git stash
+	
+5. You can examine that by using
+	git status
+	
+6. Therefore, release the stash and delete it
+	git stash apply
+	git stash drop
+	
+7. If you want to add new text file and humans.txt into stash, Use
+	git stash -u
+	
+8. Release the stash and drop it in same time
+	git stash pop
+	
+9. Delete the new text file in OS level
+	rm ANewFile.txt
+	
+10. Add and commit the changes into git
+	git commit -am "After the stash pop"

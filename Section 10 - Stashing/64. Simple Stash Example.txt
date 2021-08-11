@@ -1,0 +1,32 @@
+1. Go to our repo
+	cd projects/starter-web/
+	
+2. Edit simple.html file
+	npp simple.html
+	
+3. Sometimes, we need to keep current content without commiting. But if you have edit another file and commit it, your simple.html changes also commited with it. To prevent that action we use stash in git
+
+4. Stash can hold the changes that we applied to simple.html without any commit.
+	git stash
+	
+5. If you view simple.html. you can see new changes did not apply yet.
+
+6. Now edit README.md file
+	npp README.md
+	
+7. Commit the changes
+	git commit -am "Copyrigkt notice fixed"
+	
+8. Even after above commit, you can see simple.html is not changed because of stash.
+
+9. Think, now we want to release the stash and commit stash.html changes. You can do it by applying stash
+		git stash apply
+		
+10. Now, commit the changes
+	git commit -am "stash completed"
+	
+11. To view stash history you can type
+	git stash list
+	
+12. We can remove stash from the list if we want. In our case, we have only one stash. Lets delete it
+	git stash drop
